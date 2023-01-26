@@ -87,7 +87,7 @@ ul {
 }
 .menu-item {
   font-size: 16px;
-  list-style: 1.5;
+  line-height: 1.5;
   font-weight: 500;
   color: var(--pramery-text-color);
 }
@@ -144,7 +144,8 @@ ul {
   background-color: var(--button-hero-active);
 }
 .advantages {
-  margin-top: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .visually-hidden {
   position: absolute;
@@ -164,6 +165,9 @@ ul {
 .advantages-item:not(:last-child) {
   margin-right: 24px;
 }
+.advantages-item {
+  width: 264px;
+}
 
 .advantages-title {
   font-style: normal;
@@ -177,7 +181,7 @@ ul {
   color: var(--second-text-color);
 }
 .services {
-  margin-top: 120px;
+  padding-bottom: 120px;
   text-align: center;
 }
 .services-list {
@@ -275,13 +279,12 @@ ul {
 .example-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-left: -24px;
   margin-top: -48px;
 }
 .example-item {
   margin-top: 48px;
-
-  flex-basis: calc((100% - 48px) / 3);
+  margin-left: 24px;
 }
 .example-container {
   padding-top: 32px;
